@@ -33,13 +33,13 @@
       "scripts": [
         "scripts/base.sh",
         "scripts/ruby.sh",
+        "scripts/vmadditions.sh",
         "scripts/puppet.sh"
       ],
       "type": "shell"
-    },
-    {
-      "type": "puppet-masterless",
-      "manifest_file": "puppet.pp",
-      "module_paths": ["./puppet-modules"]
     }
-  ]}
+  ],
+  "post-processors": [
+    ["vagrant"]
+  ]
+}
