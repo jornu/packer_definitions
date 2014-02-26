@@ -33,6 +33,7 @@
       "scripts": [
         "scripts/base.sh",
         "scripts/ruby.sh",
+        "scripts/vagrant_ssh.sh",
         "scripts/vmadditions.sh",
         "scripts/puppet.sh"
       ],
