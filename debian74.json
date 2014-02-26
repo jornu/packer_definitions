@@ -1,10 +1,12 @@
 {
   "builders": [{
+    "vm_name": "websites-box",
     "type": "virtualbox-iso",
     "guest_os_type": "Debian_64",
     "iso_url": "http://cdimage.debian.org/debian-cd/7.4.0/amd64/iso-cd/debian-7.4.0-amd64-netinst.iso",
     "iso_checksum": "e7e9433973f082a297793c3c5010b2c5",
     "iso_checksum_type": "md5",
+    "guest_additions_mode": "disable",
     "ssh_username": "vagrant",
     "ssh_password": "vagrant",
     "ssh_wait_timeout": "10000s",
@@ -34,7 +36,6 @@
         "scripts/base.sh",
         "scripts/ruby.sh",
         "scripts/vagrant_ssh.sh",
-        "scripts/vmadditions.sh",
         "scripts/puppet.sh"
       ],
       "type": "shell"
